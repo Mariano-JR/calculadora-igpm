@@ -1,0 +1,153 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    background: url(../IMG/Prancheta.png);
+    background-size: 100%;
+    width: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* Header */
+
+header {
+    width: 100%;
+    height: 55px;
+}
+
+header img {
+    margin-left: 20px;
+}
+
+/* Section */
+
+section {
+    display: flex;
+}
+
+#calculadora div {
+    display: flex;
+    align-items: center;
+    flex-flow: column wrap;
+    margin: 10% 0 20px 0;
+}
+
+#calculadora {
+    height: 100%;
+    width: 50%;
+}
+
+input {
+    margin: 10px;
+    text-align: center;
+}
+
+input::placeholder {
+    color: #FF5004;
+    text-align: center;
+}
+
+button {
+    background-color: #FF5004;
+    color: #FFFFFF;
+    width: 10em;
+    height: 2em;
+    font-size: 1em;
+    border-radius: 5px 5px 5px;
+    border-style: hidden;
+    margin-top: 20px;
+    margin-inline: auto;
+    -webkit-border-radius: 5px 5px 5px;
+    -moz-border-radius: 5px 5px 5px;
+    -ms-border-radius: 5px 5px 5px;
+    -o-border-radius: 5px 5px 5px;
+}
+
+button:active {
+    background-color: #a33100;
+}
+
+#accordion {
+    margin-inline: auto;
+    width: 50%;
+    margin-right: 10%;
+    font-size: 0.8em;
+}
+
+#accordion button {
+    color: #FF5004;
+    background-color: #FFFFFF;
+    font-size: 0.8em;
+}
+
+h3 {
+    color: #FF5004;
+}
+
+h4 {
+    margin-left: auto;
+}
+
+@media only screen and (max-width: 600px) {
+    body {
+        background: url(../IMG/Modelo_Story.png);
+        background-size: 100%;
+    }
+
+
+    header {
+        width: 100%;
+        height: 45px;
+    }
+
+    header img {
+        margin-top: 2px;
+        height: 40px;
+    }
+
+    section {
+        display: flex;
+        flex-flow: column wrap;
+        width: 100%;
+        margin-top: 10%;
+    }
+
+    #calculadora button {
+        color: #FF5004;
+        background-color: #FFFFFF;
+    }
+
+    #calculadora button:active {
+        color: #FFFFFF;
+        background-color: #a33100;
+    }
+
+    #calculadora, #accordion, input::placeholder {
+        margin-inline: auto;
+        text-align: center;
+        font-size: 0.8em;
+    }
+
+    #accordion {
+        width: 80%;
+    }
+
+    #accordion, h3 {
+        color: #FFFFFF;
+        margin-top: 15%;
+    }
+
+    #accordion img {
+        width: 350px;
+        height: 400px;
+    }
+}
+
